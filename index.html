@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-white text-gray-800 font-sans">
+    <!-- ✅ Navbar Component -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Brand Name -->
+            <h1 class="text-xl font-bold">MyPortfolio</h1>
+
+
+        </div>
+    </nav>
+
+
+    <!-- Hero section with your image, name and title -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <!-- Profile Image -->
+            <div class="w-40 h-40 mb-6 md:mb-0">
+                <img src="images/IMG_7865.JPG"
+                    alt="Profile" class="rounded-full object-cover w-full h-full shadow-lg" />
+            </div>
+
+
+            <!-- Intro Text -->
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    Hi, I'm <span class="text-red-600">Sonali Saroj</span>
+                </h2>
+                <p class="text-xl text-gray-600 mt-2">A Passionate Web Developer</p>
+
+
+                <!-- TODO: Add a button that says "Download Resume" -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ✅ About Me Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+                About Me
+            </h2>
+            <p class="max-w-xl mx-auto text-center">Results-driven Software Engineer with 3 years of hands-on experience
+                in JavaScript, React.js, and
+                front-end web
+                development. Skilled in building responsive, scalable web applications and collaborating in agile
+                environments. Proficient in
+                modern front-end tooling, state management, and RESTful API integration. Committed to writing clean,
+                maintainable code
+                while continuously enhancing software performance and user experience.</p>
+
+
+
+        </div>
+    </section>
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+                Professional Experience
+            </h2>
+            <div class="font-semibold text-lg mb-2 text-red-600">
+                <div><strong>Capgemini</strong></div>
+                <div>Associate Software Engineer</div>
+                <div>November 2022 - Present</div>
+            </div>
+            <br />
+            <li>Launched and maintained scalable React-based user interfaces for client-facing applications.</li>
+
+            <li>Established a code review process that enforced the usage of reusable components and custom hooks,
+                resulting in a 30% decrease in code complexity and improved long-term maintainability.</li>
+            <li>Worked on the
+                frontend design of Gen AI application using React.js, reducing initial load time by 20%. </li>
+            <li>Ensured
+                cross</li>
+            <li>browser compatibility and responsive design across Chrome, Firefox, Safari, and Edge, improving
+                accessibility and user experience consistency.</li>
+            <li>Built a Flutter-based mobile application for the IoMT
+                (Internet of Medical Things) Demo project,
+                improving app performance by 30% and enhancing development efficiency, leading to a 20%</li>
+            <li>time savings
+                through efficient code reuse and modular architecture.</li>
+            <li>Collaborated closely with back-end developers
+                to consume RESTful APIs and ensure seamless data flow.</li>
+            <li>Participated in daily stand-ups, sprint
+                planning, and peer code reviews in an Agile team.</li>
+            <li> Assisted in the implementation of single-page
+                applications using React.js and Redux, leading to 25%
+                boost in interface fluidity and system agility. </li>
+            <li> Translated UI/UX wireframes into interactive web pages
+                using HTML, CSS, and JavaScript, improving user
+                engagement and reducing development time by 20%. </li>
+            <li> Managed Git version control, resolved merge conflicts
+                with 100% accuracy, and implemented a structured branching
+                strategy, enhancing code stability and reducing deployment time. </li>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Skills / Tech Stack Section -->
+    <section id="skills" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+                Tech Stack
+            </h2>
+            <ul class="list-disc list-inside max-w-xl mx-auto space-y-2 ">
+                <li> <strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3, Java (Basics) </li>
+                <li> <strong>Frameworks/Libraries:</strong> React.js, Redux, Tailwind CSS, Bootstrap ,StreamLit, Flutter</li>
+                <li><strong> Tools:</strong> Git, GitHub, Webpack, Babel, npm, vite, VS Code </li>
+                <li> <strong>Databases:</strong> Firebase, MongoDB (Basics) </li>
+                <li> <strong>Methodologies:</strong> RESTful APIs, Responsive Web Design, Agile Methodologies, Unit Testing (Jest) </li>
+            </ul>
+
+
+            <!-- Hint: Use grid, gap-4, grid-cols-2 for mobile and grid-cols-4 for larger screens -->
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Projects Section -->
+    <section id="projects" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+                Projects
+            </h2>
+            <br />
+            <h2 class="text-xl font-bold text-gray-800 mb-2">Clinical Buddy (GenAI Application) – Medical & Life
+                Sciences Domain </h2>
+            <h3>Architected an AI application using LLMs, leading to a 4.7/5-star user satisfaction rating by medical
+                staff and enhanced data
+                interaction via a responsive web interface. The solution was created to support medical professionals
+                with intelligent insights
+                and improved data interaction through a responsive web interface by achieving a 15% reduction in time to
+                diagnosis and
+                analysis. </h3>
+                <br />
+            <h3>Key Responsibilities: </h3>
+            <div>
+                <li>Designed and delivered user-friendly SPA, responsive UI components using React.js, JavaScript, HTML,
+                    and CSS
+                    aligned with modern UX principles. </li>
+                <li>Collaborated with the AI team to integrate Streamlit based demo interfaces into the production-grade
+                    React.js front
+                    end which result in 30% faster page load. </li>
+                <li>Incorporated state management using Redux for seamless UI behaviour and efficient data flow, reduced
+                    code
+                    complexity by 20%. </li>
+                <li>Coordinated with backend developers and AI engineers to fetch and display data from OpenAI
+                    Azure-hosted LLM
+                    models using APIs, shrinking API latency by 15% through optimized data fetching and display methods.
+                </li>
+            </div>
+
+
+            <!-- TODO: Create a responsive grid of project cards (name, description, button) -->
+            <!-- Hint: Use grid-cols-1 md:grid-cols-3, gap-6 -->
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Contact Me Section -->
+    <section id="contact" class="py-12 bg-gray-50 text-center">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+                Contact Me
+            </h2>
+            <ul class="hover:text-red-600 text-lg">
+                <li>Email:sonali.saroj@gmail.com</li>
+                <li>Phone: +91 9955336376</li>
+                <li>location: Gurugram, India</li>
+            </ul>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2025 Sonali. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/sonali-saroj-69218851/" class="text-blue-400 hover:underline">LinkedIn Profile</a>
+
+
+           
+        </div>
+    </footer>
+</body>
+
+</html>
