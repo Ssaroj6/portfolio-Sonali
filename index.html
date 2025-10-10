@@ -15,29 +15,37 @@
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Brand Name -->
-            <h1 class="text-xl font-bold">MyPortfolio</h1>
+            <h1 class="text-xl font-bold hover:text-red-600">MyPortfolio</h1>
+            <div>
+                <a href="#home" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white mx-2">About </a>
+                <a href="#skills" class="text-gray-300 hover:text-white mx-2">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-white mx-2">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-white mx-2">Contact</a>
+            </div>
 
 
         </div>
+
     </nav>
 
 
     <!-- Hero section with your image, name and title -->
-    <section class="bg-gray-100 py-12">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+    <section id="home" class="bg-cover bg-center py-20" style="background-image: url('images/background.jpg.webp');">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between ">
             <!-- Profile Image -->
             <div class="w-40 h-40 mb-6 md:mb-0">
-                <img src="images/IMG_7865.JPG"
-                    alt="Profile" class="rounded-full object-cover w-full h-full shadow-lg" />
+                <img src="images/IMG_7865.JPG" alt="Profile"
+                    class="rounded-full object-cover w-full h-full shadow-lg" />
             </div>
 
 
             <!-- Intro Text -->
             <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold text-gray-800">
+                <h2 class="text-3xl font-bold text-white">
                     Hi, I'm <span class="text-red-600">Sonali Saroj</span>
                 </h2>
-                <p class="text-xl text-gray-600 mt-2">A Passionate Web Developer</p>
+                <p class="text-xl text-white mt-2">A Passionate Web Developer</p>
 
 
                 <!-- TODO: Add a button that says "Download Resume" -->
@@ -48,8 +56,8 @@
 
 
     <!-- ✅ About Me Section -->
-    <section id="about" class="py-12 bg-white">
-        <div class="container mx-auto px-4">
+    <section id="about" class="flex  py-12 bg-gray-200 space-y-6 flex-col shadow-lg">
+        <div class="container mx-auto px-4 border-b-2 ">
             <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
                 About Me
             </h2>
@@ -62,9 +70,17 @@
                 maintainable code
                 while continuously enhancing software performance and user experience.</p>
 
-
-
         </div>
+        <div class=" container mx-auto px-4 text-center">
+            <h2 class="text-md font-bold text-gray-800 mb-4 text-center">
+                Click below to download my resume
+            </h2>
+            <a href="images/Sonali_Saroj_Resume.pdf"
+                class="mt-4 inline-block bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition" download>
+                <button>Download Resume</button>
+            </a>
+        </div>
+
     </section>
     <section id="about" class="py-12 bg-white">
         <div class="container mx-auto px-4">
@@ -77,34 +93,47 @@
                 <div>November 2022 - Present</div>
             </div>
             <br />
-            <li>Launched and maintained scalable React-based user interfaces for client-facing applications.</li>
 
-            <li>Established a code review process that enforced the usage of reusable components and custom hooks,
-                resulting in a 30% decrease in code complexity and improved long-term maintainability.</li>
-            <li>Worked on the
-                frontend design of Gen AI application using React.js, reducing initial load time by 20%. </li>
-            <li>Ensured
-                cross</li>
-            <li>browser compatibility and responsive design across Chrome, Firefox, Safari, and Edge, improving
-                accessibility and user experience consistency.</li>
-            <li>Built a Flutter-based mobile application for the IoMT
-                (Internet of Medical Things) Demo project,
-                improving app performance by 30% and enhancing development efficiency, leading to a 20%</li>
-            <li>time savings
-                through efficient code reuse and modular architecture.</li>
-            <li>Collaborated closely with back-end developers
-                to consume RESTful APIs and ensure seamless data flow.</li>
-            <li>Participated in daily stand-ups, sprint
-                planning, and peer code reviews in an Agile team.</li>
-            <li> Assisted in the implementation of single-page
-                applications using React.js and Redux, leading to 25%
-                boost in interface fluidity and system agility. </li>
-            <li> Translated UI/UX wireframes into interactive web pages
-                using HTML, CSS, and JavaScript, improving user
-                engagement and reducing development time by 20%. </li>
-            <li> Managed Git version control, resolved merge conflicts
-                with 100% accuracy, and implemented a structured branching
-                strategy, enhancing code stability and reducing deployment time. </li>
+            <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Key Contributions</h3>
+
+                <ul class="list-disc space-y-3 pl-6 text-blackleading-relaxed bg-gray-100 p-4 rounded-lg">
+
+                    <li>Launched and maintained scalable React-based user interfaces for client-facing applications.
+                    </li>
+
+                    <li>Established a code review process enforcing reusable components and custom hooks,
+                        reducing code complexity by 30% and improving maintainability.</li>
+
+                    <li>Developed the frontend of a Gen AI application using React.js,
+                        reducing initial load time by 20%.</li>
+
+                    <li>Ensured cross-browser compatibility and responsive design across Chrome, Firefox, Safari, and
+                        Edge,
+                        improving accessibility and user experience.</li>
+
+                    <li>Built a Flutter-based IoMT (Internet of Medical Things) demo mobile application,
+                        improving app performance by 30% and boosting development efficiency by 20%
+                        through reusable modular architecture.</li>
+
+                    <li>Collaborated with back-end developers to consume RESTful APIs and ensure seamless data flow.
+                    </li>
+
+                    <li>Participated in Agile ceremonies including daily stand-ups, sprint planning,
+                        and peer code reviews.</li>
+
+                    <li>Supported SPA development using React.js and Redux, leading to a 25% boost
+                        in interface fluidity and system flexibility.</li>
+
+                    <li>Translated UI/UX wireframes into interactive pages using HTML, CSS, and JavaScript,
+                        improving user engagement and reducing development time by 20%.</li>
+
+                    <li>Managed Git version control, resolved merge conflicts with 100% accuracy,
+                        and implemented structured branching strategies, improving stability and reducing deployment
+                        time.</li>
+
+                </ul>
+            </div>
 
 
 
@@ -114,22 +143,95 @@
 
 
     <!-- ✅ Skills / Tech Stack Section -->
-    <section id="skills" class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4">
+    <section id="skills" class=" py-12 bg-gray-200">
+        <div class=" container mx-auto px-4">
             <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
                 Tech Stack
             </h2>
-            <ul class="list-disc list-inside max-w-xl mx-auto space-y-2 ">
-                <li> <strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3, Java (Basics) </li>
-                <li> <strong>Frameworks/Libraries:</strong> React.js, Redux, Tailwind CSS, Bootstrap ,StreamLit, Flutter</li>
-                <li><strong> Tools:</strong> Git, GitHub, Webpack, Babel, npm, vite, VS Code </li>
-                <li> <strong>Databases:</strong> Firebase, MongoDB (Basics) </li>
-                <li> <strong>Methodologies:</strong> RESTful APIs, Responsive Web Design, Agile Methodologies, Unit Testing (Jest) </li>
-            </ul>
+            <div class="card-deck bg-white rounded-lg shadow-xl p-12 max-w-2xl mx-auto">
 
 
-            <!-- Hint: Use grid, gap-4, grid-cols-2 for mobile and grid-cols-4 for larger screens -->
-        </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <div class="card bg-gray-100 p-4 rounded-lg shadow">
+                        <h5 class="card-title font-bold mb-4 text-center">Frameworks and Libraries</h5>
+
+                        <hr />
+                        <br />
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+                        <p>
+                            <a href="https://react.dev/" class="flex items-center space-x-2">
+                                <img src="images/icons8-react-24.png" alt="React" class="h-8  flex" />
+                                React
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://redux.js.org/" class="flex items-center space-x-2">
+                                <img src="images/icons8-redux-48.png" alt="Redux" class="h-8  flex" />
+                                Redux
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://tailwindcss.com/" class="flex items-center space-x-2">
+                                <img src="images/icons8-tailwind-css-48.png" alt="Tailwind CSS" class="h-8 flex" />
+                                Tailwind CSS
+                            </a>
+                        </p>
+                    </div>
+
+
+                    <div class="card bg-gray-100 p-4 rounded-lg shadow">
+                        <h5 class="card-title font-bold mb-4 text-center">Languages</h5>
+                        <hr />
+                        <br />
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/HTML5" class="flex items-center space-x-2">
+                                <img src="images/icons8-html5-48.png" alt="HTML5" class="h-8 flex" /> HTML5
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/CSS3_(disambiguation)"
+                                class="flex items-center space-x-2">
+                                <img src="images/icons8-css3-48.png" alt="CSS3" class="h-8 flex" /> CSS3
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.javascript.com/" class="flex items-center space-x-2">
+                                <img src="images/icons8-javascript-logo-50.png" alt="JavaScript" class="h-8  flex" />
+                                JavaScript
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card bg-gray-100 p-4 rounded-lg shadow">
+                        <h5 class="card-title font-bold mb-4 text-center">Development Tools</h5>
+
+                        <hr />
+                        <br />
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+                        <p>
+                            <a href="https://git-scm.com/" class="flex items-center space-x-2">
+                                <img src="images/icons8-git-48.png" alt="Git" class="h-8 flex" /> GIT
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://docs.github.com/en" class="flex items-center space-x-2">
+                                <img src="images/icons8-github-30.png" alt="GitHub" class="h-8 flex" />
+                                GitHub
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://code.visualstudio.com/docs" class="flex items-center space-x-2">
+                                <img src="images/icons8-visual-studio-code-48.png" alt="Visual Studio Code"
+                                    class="h-8 flex" /> Visual Studio Code
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
     </section>
 
 
@@ -141,8 +243,10 @@
                 Projects
             </h2>
             <br />
-            <h2 class="text-xl font-bold text-gray-800 mb-2">Clinical Buddy (GenAI Application) – Medical & Life
+            <h2 class="text-xl font-bold text-red-600 mb-2">Clinical Buddy (GenAI Application) – Medical & Life
                 Sciences Domain </h2>
+            <hr />
+            <br />
             <h3>Architected an AI application using LLMs, leading to a 4.7/5-star user satisfaction rating by medical
                 staff and enhanced data
                 interaction via a responsive web interface. The solution was created to support medical professionals
@@ -150,34 +254,77 @@
                 and improved data interaction through a responsive web interface by achieving a 15% reduction in time to
                 diagnosis and
                 analysis. </h3>
-                <br />
-            <h3>Key Responsibilities: </h3>
-            <div>
-                <li>Designed and delivered user-friendly SPA, responsive UI components using React.js, JavaScript, HTML,
-                    and CSS
-                    aligned with modern UX principles. </li>
-                <li>Collaborated with the AI team to integrate Streamlit based demo interfaces into the production-grade
-                    React.js front
-                    end which result in 30% faster page load. </li>
-                <li>Incorporated state management using Redux for seamless UI behaviour and efficient data flow, reduced
-                    code
-                    complexity by 20%. </li>
-                <li>Coordinated with backend developers and AI engineers to fetch and display data from OpenAI
-                    Azure-hosted LLM
-                    models using APIs, shrinking API latency by 15% through optimized data fetching and display methods.
-                </li>
+            <br />
+            <div class="max-w-3xl mx-auto bg-gray-100 shadow-xl rounded-lg p-4">
+
+                <!-- Accordion Button -->
+                <button onclick="toggleResponsibilities()"
+                    class="w-full flex justify-between items-center text-left text-md font-semibold text-gray-800">
+                    Key Responsibilities
+                    <span id="icon" class="text-xl">+</span>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div id="responsibilities" class="mt-4 hidden">
+                    <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                        <li>Designed and delivered user-friendly SPA, responsive UI components using React.js,
+                            JavaScript, HTML,
+                            and CSS aligned with modern UX principles.</li>
+                        <li>Collaborated with the AI team to integrate Streamlit-based demo interfaces into the
+                            production-grade
+                            React.js frontend, resulting in 30% faster page load.</li>
+                        <li>Incorporated state management using Redux for seamless UI behaviour and efficient data flow,
+                            reducing
+                            code complexity by 20%.</li>
+                        <li>Coordinated with backend developers and AI engineers to fetch and display data from OpenAI
+                            Azure-hosted LLM models using APIs, shrinking API latency by 15% through optimized data
+                            fetching and
+                            display methods.</li>
+                    </ul>
+                </div>
             </div>
 
+            <script>
+                function toggleResponsibilities() {
+                    const content = document.getElementById("responsibilities");
+                    const icon = document.getElementById("icon");
 
-            <!-- TODO: Create a responsive grid of project cards (name, description, button) -->
-            <!-- Hint: Use grid-cols-1 md:grid-cols-3, gap-6 -->
+                    if (content.classList.contains("hidden")) {
+                        content.classList.remove("hidden");
+                        icon.textContent = "−";
+                    } else {
+                        content.classList.add("hidden");
+                        icon.textContent = "+";
+                    }
+                }
+            </script>
+
+            <br />
+            <h2 class="text-xl font-bold text-red-600 mb-2">E-commerce Website </h2>
+            <hr />
+            <br />
+            <h3>Developed a fully responsive e-commerce platform using React.js, featuring intuitive product browsing,
+                cart
+                management, and a seamless checkout process. Utilized React Router for smooth navigation and used Redux
+                for
+                efficient state management across components. Integrated secure payment gateway APIs and authentication
+                to
+                ensure safe transactions. Focused on delivering a modern, user-friendly interface with reusable
+                components,
+                optimized performance, and scalability for future feature expansion.
+            </h3>
+            <br />
+            <div class="max-w-3xl mx-auto bg-gray-100 shadow-xl rounded-lg p-5 text-md font-semibold text-gray-800">
+                <a href="#" class="text-black hover:underline">GitHub Project Link</a>
+            </div>
+
         </div>
     </section>
 
 
 
     <!-- ✅ Contact Me Section -->
-    <section id="contact" class="py-12 bg-gray-50 text-center">
+    <section id="contact" class="py-12 bg-gray-200 text-center">
         <div class="container mx-auto px-4 max-w-xl">
             <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
                 Contact Me
@@ -187,6 +334,8 @@
                 <li>Phone: +91 9955336376</li>
                 <li>location: Gurugram, India</li>
             </ul>
+            <a href="https://www.linkedin.com/in/sonali-saroj-69218851/" class="text-blue-400 hover:underline">LinkedIn
+                Profile</a>
 
 
         </div>
@@ -198,10 +347,10 @@
     <footer class="bg-gray-900 text-white py-6">
         <div class="container mx-auto px-4 text-center">
             <p class="text-sm">&copy; 2025 Sonali. All rights reserved.</p>
-            <a href="https://www.linkedin.com/in/sonali-saroj-69218851/" class="text-blue-400 hover:underline">LinkedIn Profile</a>
 
 
-           
+
+
         </div>
     </footer>
 </body>
